@@ -1,0 +1,30 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="sender.Sender_Application.controller.Home"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="sap.ui.layout.form">
+	<App>
+		<pages>
+			<Page title="Home Page">
+				<content>
+					<VBox class="sapUiSmallMargin">
+						<f:SimpleForm id="sForm" editable="false" layout="ResponsiveGridLayout"  labelSpanXL="3" labelSpanL="3"
+							labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1"
+							columnsL="1" columnsM="1" singleContainerFullSize="false">
+							<f:content>
+								<Label text="Name"/>
+								<Input id="input1" class="sapUiSmallMarginEnd"/>
+								<Label text="City"/>
+								<Input id="input2" class="sapUiSmallMarginBottom"/>
+							</f:content>
+						</f:SimpleForm>
+					</VBox>
+					<Panel>
+						<FlexBox height="100px" alignItems="Center" justifyContent="Center">
+								<Button text="Save Data" type="Accept" press="onSet" class="sapUiSmallMarginEnd"/>
+								<ToolbarSpacer/>
+							<Button text="Navigate" type="Emphasized" press="onSend"/>
+						</FlexBox>
+					</Panel>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
